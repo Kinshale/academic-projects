@@ -1,0 +1,26 @@
+name: bluesky
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11 # NOTE: 3.10 causes bugs
+  - pandas
+  - numpy
+  - duckdb # For columnar dbs 
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - pyarrow
+  - fsspec
+  - s3fs
+  - requests
+  - tqdm
+  - ipykernel
+  - pip
+  - pip:
+    - atproto
+    - datasets
+    - huggingface-hub
+    - sqlalchemy
+    - psycopg2
+    # - adlfs    # For Azure blob storage (if needed)
+    # - gcsfs    # For Google Cloud Storage (if needed)

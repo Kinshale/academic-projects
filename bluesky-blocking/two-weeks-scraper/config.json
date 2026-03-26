@@ -1,0 +1,30 @@
+{
+    "firehose": {
+        "verbose": false,
+        "reconnect_on_error": true,
+        "max_reconnect_attempts": 100
+    },
+    "scraping": {
+        "time_limit": 864000,
+        "action_limit": null,
+        "log_stats_interval": 300
+    },
+    "actions": {
+        "filename" : "actions.json",
+        "save": true
+    },
+    "output": {
+        "base_directory": "./data",
+        "file_rotation": "daily"
+    },
+    "monitoring": {
+        "enable_healthcheck": true,
+        "healthcheck_port": 8080,
+        "stats_file": "scraper_stats.json"
+    },
+     "resolver": { "cache_max_size": 20000 },
+    "logging": {
+        "level": "INFO",
+        "_comment": "Logging levels: DEBUG (all logs including httpx), INFO (errors / warnings + stats), WARNING (errors / warnings), NONE (no logs)"
+    }
+}

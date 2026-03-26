@@ -1,0 +1,32 @@
+{
+    "firehose": {
+        "verbose": false,
+        "reconnect_on_error": true,
+        "max_reconnect_attempts": 5
+    },
+    "scraping": {
+        "time_limit": 600,
+        "action_limit": null,
+        "disk_usage_check_interval": 60,
+        "max_disk_usage_percent": 95,
+        "log_stats_interval": 30
+    },
+    "actions": {
+        "filename" : "test_actions.json",
+        "save": true
+    },
+    "output": {
+        "base_directory": "./test_data",
+        "file_rotation": "daily",
+        "compress_old_files": false
+    },
+    "monitoring": {
+        "enable_healthcheck": true,
+        "healthcheck_port": 8080,
+        "stats_file": "test_stats.json"
+    },
+    "logging": {
+        "level": "INFO",
+        "_comment": "Logging levels: DEBUG (all logs including httpx), INFO (errors / warnings + stats), WARNING (errors / warnings), NONE (no logs)"
+    }
+}

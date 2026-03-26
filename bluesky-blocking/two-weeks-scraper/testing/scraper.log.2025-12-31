@@ -1,0 +1,18 @@
+2025-12-31 12:40:40,581 - __main__ - INFO - Starting Firehose Scraper
+2025-12-31 12:40:40,582 - __main__ - INFO - Configuration loaded: 0.0 days duration
+2025-12-31 12:40:40,606 - __main__ - INFO - Starting collection for 0.0 days
+2025-12-31 12:40:40,607 - __main__ - INFO - Connecting to firehose (attempt 1)
+2025-12-31 12:41:10,619 - __main__ - INFO - Stats: 123 processed, 0 errors, 4.1 actions/sec, 0.0h uptime
+2025-12-31 12:41:40,809 - __main__ - INFO - Stats: 262 processed, 0 errors, 4.4 actions/sec, 0.0h uptime
+2025-12-31 12:42:10,892 - __main__ - INFO - Stats: 395 processed, 0 errors, 4.4 actions/sec, 0.0h uptime
+2025-12-31 12:42:40,892 - __main__ - INFO - Stats: 540 processed, 0 errors, 4.5 actions/sec, 0.0h uptime
+2025-12-31 12:43:10,904 - __main__ - INFO - Stats: 701 processed, 0 errors, 4.7 actions/sec, 0.0h uptime
+2025-12-31 12:43:41,265 - __main__ - INFO - Stats: 860 processed, 0 errors, 4.8 actions/sec, 0.1h uptime
+2025-12-31 12:44:11,379 - __main__ - INFO - Stats: 1015 processed, 0 errors, 4.8 actions/sec, 0.1h uptime
+2025-12-31 12:44:41,616 - __main__ - INFO - Stats: 1194 processed, 0 errors, 5.0 actions/sec, 0.1h uptime
+2025-12-31 12:45:11,788 - __main__ - INFO - Stats: 1387 processed, 0 errors, 5.1 actions/sec, 0.1h uptime
+2025-12-31 12:45:42,031 - __main__ - INFO - Stats: 1571 processed, 0 errors, 5.2 actions/sec, 0.1h uptime
+2025-12-31 12:46:04,469 - __main__ - INFO - Received signal 2, shutting down gracefully...
+2025-12-31 12:46:04,469 - __main__ - INFO - Collection stopping...
+2025-12-31 12:46:04,469 - __main__ - INFO - Final stats: 1697 processed, 0 errors, 0 reconnects, 0.1h runtime
+2025-12-31 12:46:04,469 - __main__ - INFO - Collection stopped

@@ -6,12 +6,12 @@
 #define CLAMP(val, min, max)                                                   \
 	((val) < (min) ? (min) : ((val) > (max) ? (max) : (val)))
 #include <assert.h>
+#include <limits.h>
 #include <math.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <limits.h>
 
 #ifdef DEBUG
 #define DEBUG_PRINT(fmt, ...) printf("DEB: " fmt, ##__VA_ARGS__)
@@ -52,15 +52,11 @@ typedef struct {
 	int8_t dy[6];
 } NeighborOffsets;
 
-static const NeighborOffsets even_offsets = {
-	.dx = {-1, -1, -1, 0, 1, 0},
-	.dy = {1, 0, -1, -1, 0, 1}
-};
+static const NeighborOffsets even_offsets = {.dx = {-1, -1, -1, 0, 1, 0},
+											 .dy = {1, 0, -1, -1, 0, 1}};
 
-static const NeighborOffsets odd_offsets = {
-	.dx = {0, -1, 0, 1, 1, 1},
-	.dy = {1, 0, -1, -1, 0, 1}
-};
+static const NeighborOffsets odd_offsets = {.dx = {0, -1, 0, 1, 1, 1},
+											.dy = {1, 0, -1, -1, 0, 1}};
 
 // ===== Graph with the airports (when all cells cost 1) ======
 typedef struct {
@@ -170,9 +166,11 @@ uint32_t current_backward_label = 1;
 int in_bounds(int x, int y) { return x >= 0 && x < W && y >= 0 && y < H; }
 
 int hex_distance(int x1, int y1, int x2, int y2) {
-    int dx = abs(x2 - x1), dy = abs(y2 - y1);
-    int oc = (MIN(y1, y2) + ((x1 > x2) ^ (y1 > y2))) & 1; // Offset correcction: are we moving in the same direction in the x and the y?
-    return dx + dy - MIN((dy + oc) / 2, dx);
+	int dx = abs(x2 - x1), dy = abs(y2 - y1);
+	int oc = (MIN(y1, y2) + ((x1 > x2) ^ (y1 > y2))) &
+			 1; // Offset correcction: are we moving in the same direction in
+				// the x and the y?
+	return dx + dy - MIN((dy + oc) / 2, dx);
 }
 
 // Add this function near the other utility functions
@@ -380,7 +378,8 @@ int bidirectional_dijkstra(int x1, int y1, int x2, int y2) {
 			}
 		}
 
-		// NOTE: Early termination if best path found is less than current heap minimums
+		// NOTE: Early termination if best path found is less than current heap
+		// minimums
 		if (best_path != INT_MAX) {
 			int min_f = is_empty(heap_f) ? INT_MAX : heap_f->data[0].cost;
 			int min_b = is_empty(heap_b) ? INT_MAX : heap_b->data[0].cost;
@@ -532,8 +531,8 @@ int only_ones_dijkstra(int x1, int y1, int x2, int y2) {
 }
 // ================= ^^^^ Dijkstra Algorithms ^^^^  ==================
 //
-// ================= vvvv Logic for splitting the map into regions of unreachability vvvv ==================
-// Initialize region information
+// ================= vvvv Logic for splitting the map into regions of
+// unreachability vvvv ================== Initialize region information
 void free_region_info() {
 	if (region_info != NULL) {
 		for (int x = 0; x < W; x++) {
@@ -674,7 +673,8 @@ int are_cells_disconnected(int x1, int y1, int x2, int y2) {
 
 	return !(overlap == 0);
 }
-// ================= ^^^^ Logic for splitting the map into regions of unreachability ^^^^  ==================
+// ================= ^^^^ Logic for splitting the map into regions of
+// unreachability ^^^^  ==================
 
 void parse_init(int w, int h) {
 	// Free resources
@@ -810,7 +810,7 @@ void parse_travel_cost(int x1, int y1, int x2, int y2) {
 		printf("%d\n", -1);
 		return;
 	}
-	
+
 	// If the map has only ones, we can optimize
 	int r;
 	if (change_point_count == 0) {

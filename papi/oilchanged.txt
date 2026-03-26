@@ -1,0 +1,293 @@
+=== Starting only_ones_dijkstra ===
+Start: (65756, 0), End: (37521, 0)
+
+All points:
+Point 0: (65756, 0)
+Point 1: (37521, 0)
+Point 2: (28952, 0)
+Point 3: (6351, 0)
+Point 4: (48533, 0)
+Point 5: (28528, 0)
+Point 6: (22552, 0)
+Point 7: (24537, 0)
+Point 8: (14490, 0)
+Point 9: (31511, 0)
+Point 10: (66389, 0)
+Point 11: (58508, 0)
+Point 12: (27089, 0)
+Point 13: (15111, 0)
+Adding air route edge: 2 (28952, 0) -> 3 (6351, 0) cost: 1
+Adding air route edge: 4 (48533, 0) -> 5 (28528, 0) cost: 1
+Adding air route edge: 6 (22552, 0) -> 7 (24537, 0) cost: 1
+Adding air route edge: 8 (14490, 0) -> 9 (31511, 0) cost: 1
+Adding air route edge: 10 (66389, 0) -> 11 (58508, 0) cost: 1
+Adding air route edge: 12 (27089, 0) -> 13 (15111, 0) cost: 1
+
+Graph edges:
+Node 0 (65756, 0) edges:
+  -> 1 (37521, 0) cost: 28235
+  -> 2 (28952, 0) cost: 36804
+  -> 3 (6351, 0) cost: 59405
+  -> 4 (48533, 0) cost: 17223
+  -> 5 (28528, 0) cost: 37228
+  -> 6 (22552, 0) cost: 43204
+  -> 7 (24537, 0) cost: 41219
+  -> 8 (14490, 0) cost: 51266
+  -> 9 (31511, 0) cost: 34245
+  -> 10 (66389, 0) cost: 633
+  -> 11 (58508, 0) cost: 7248
+  -> 12 (27089, 0) cost: 38667
+  -> 13 (15111, 0) cost: 50645
+Node 1 (37521, 0) edges:
+  -> 0 (65756, 0) cost: 28235
+  -> 2 (28952, 0) cost: 8569
+  -> 3 (6351, 0) cost: 31170
+  -> 4 (48533, 0) cost: 11012
+  -> 5 (28528, 0) cost: 8993
+  -> 6 (22552, 0) cost: 14969
+  -> 7 (24537, 0) cost: 12984
+  -> 8 (14490, 0) cost: 23031
+  -> 9 (31511, 0) cost: 6010
+  -> 10 (66389, 0) cost: 28868
+  -> 11 (58508, 0) cost: 20987
+  -> 12 (27089, 0) cost: 10432
+  -> 13 (15111, 0) cost: 22410
+Node 2 (28952, 0) edges:
+  -> 0 (65756, 0) cost: 36804
+  -> 1 (37521, 0) cost: 8569
+  -> 3 (6351, 0) cost: 22601
+  -> 4 (48533, 0) cost: 19581
+  -> 5 (28528, 0) cost: 424
+  -> 6 (22552, 0) cost: 6400
+  -> 7 (24537, 0) cost: 4415
+  -> 8 (14490, 0) cost: 14462
+  -> 9 (31511, 0) cost: 2559
+  -> 10 (66389, 0) cost: 37437
+  -> 11 (58508, 0) cost: 29556
+  -> 12 (27089, 0) cost: 1863
+  -> 13 (15111, 0) cost: 13841
+  -> 3 (6351, 0) cost: 1
+Node 3 (6351, 0) edges:
+  -> 0 (65756, 0) cost: 59405
+  -> 1 (37521, 0) cost: 31170
+  -> 2 (28952, 0) cost: 22601
+  -> 4 (48533, 0) cost: 42182
+  -> 5 (28528, 0) cost: 22177
+  -> 6 (22552, 0) cost: 16201
+  -> 7 (24537, 0) cost: 18186
+  -> 8 (14490, 0) cost: 8139
+  -> 9 (31511, 0) cost: 25160
+  -> 10 (66389, 0) cost: 60038
+  -> 11 (58508, 0) cost: 52157
+  -> 12 (27089, 0) cost: 20738
+  -> 13 (15111, 0) cost: 8760
+Node 4 (48533, 0) edges:
+  -> 0 (65756, 0) cost: 17223
+  -> 1 (37521, 0) cost: 11012
+  -> 2 (28952, 0) cost: 19581
+  -> 3 (6351, 0) cost: 42182
+  -> 5 (28528, 0) cost: 20005
+  -> 6 (22552, 0) cost: 25981
+  -> 7 (24537, 0) cost: 23996
+  -> 8 (14490, 0) cost: 34043
+  -> 9 (31511, 0) cost: 17022
+  -> 10 (66389, 0) cost: 17856
+  -> 11 (58508, 0) cost: 9975
+  -> 12 (27089, 0) cost: 21444
+  -> 13 (15111, 0) cost: 33422
+  -> 5 (28528, 0) cost: 1
+Node 5 (28528, 0) edges:
+  -> 0 (65756, 0) cost: 37228
+  -> 1 (37521, 0) cost: 8993
+  -> 2 (28952, 0) cost: 424
+  -> 3 (6351, 0) cost: 22177
+  -> 4 (48533, 0) cost: 20005
+  -> 6 (22552, 0) cost: 5976
+  -> 7 (24537, 0) cost: 3991
+  -> 8 (14490, 0) cost: 14038
+  -> 9 (31511, 0) cost: 2983
+  -> 10 (66389, 0) cost: 37861
+  -> 11 (58508, 0) cost: 29980
+  -> 12 (27089, 0) cost: 1439
+  -> 13 (15111, 0) cost: 13417
+Node 6 (22552, 0) edges:
+  -> 0 (65756, 0) cost: 43204
+  -> 1 (37521, 0) cost: 14969
+  -> 2 (28952, 0) cost: 6400
+  -> 3 (6351, 0) cost: 16201
+  -> 4 (48533, 0) cost: 25981
+  -> 5 (28528, 0) cost: 5976
+  -> 7 (24537, 0) cost: 1985
+  -> 8 (14490, 0) cost: 8062
+  -> 9 (31511, 0) cost: 8959
+  -> 10 (66389, 0) cost: 43837
+  -> 11 (58508, 0) cost: 35956
+  -> 12 (27089, 0) cost: 4537
+  -> 13 (15111, 0) cost: 7441
+  -> 7 (24537, 0) cost: 1
+Node 7 (24537, 0) edges:
+  -> 0 (65756, 0) cost: 41219
+  -> 1 (37521, 0) cost: 12984
+  -> 2 (28952, 0) cost: 4415
+  -> 3 (6351, 0) cost: 18186
+  -> 4 (48533, 0) cost: 23996
+  -> 5 (28528, 0) cost: 3991
+  -> 6 (22552, 0) cost: 1985
+  -> 8 (14490, 0) cost: 10047
+  -> 9 (31511, 0) cost: 6974
+  -> 10 (66389, 0) cost: 41852
+  -> 11 (58508, 0) cost: 33971
+  -> 12 (27089, 0) cost: 2552
+  -> 13 (15111, 0) cost: 9426
+Node 8 (14490, 0) edges:
+  -> 0 (65756, 0) cost: 51266
+  -> 1 (37521, 0) cost: 23031
+  -> 2 (28952, 0) cost: 14462
+  -> 3 (6351, 0) cost: 8139
+  -> 4 (48533, 0) cost: 34043
+  -> 5 (28528, 0) cost: 14038
+  -> 6 (22552, 0) cost: 8062
+  -> 7 (24537, 0) cost: 10047
+  -> 9 (31511, 0) cost: 17021
+  -> 10 (66389, 0) cost: 51899
+  -> 11 (58508, 0) cost: 44018
+  -> 12 (27089, 0) cost: 12599
+  -> 13 (15111, 0) cost: 621
+  -> 9 (31511, 0) cost: 1
+Node 9 (31511, 0) edges:
+  -> 0 (65756, 0) cost: 34245
+  -> 1 (37521, 0) cost: 6010
+  -> 2 (28952, 0) cost: 2559
+  -> 3 (6351, 0) cost: 25160
+  -> 4 (48533, 0) cost: 17022
+  -> 5 (28528, 0) cost: 2983
+  -> 6 (22552, 0) cost: 8959
+  -> 7 (24537, 0) cost: 6974
+  -> 8 (14490, 0) cost: 17021
+  -> 10 (66389, 0) cost: 34878
+  -> 11 (58508, 0) cost: 26997
+  -> 12 (27089, 0) cost: 4422
+  -> 13 (15111, 0) cost: 16400
+Node 10 (66389, 0) edges:
+  -> 0 (65756, 0) cost: 633
+  -> 1 (37521, 0) cost: 28868
+  -> 2 (28952, 0) cost: 37437
+  -> 3 (6351, 0) cost: 60038
+  -> 4 (48533, 0) cost: 17856
+  -> 5 (28528, 0) cost: 37861
+  -> 6 (22552, 0) cost: 43837
+  -> 7 (24537, 0) cost: 41852
+  -> 8 (14490, 0) cost: 51899
+  -> 9 (31511, 0) cost: 34878
+  -> 11 (58508, 0) cost: 7881
+  -> 12 (27089, 0) cost: 39300
+  -> 13 (15111, 0) cost: 51278
+  -> 11 (58508, 0) cost: 1
+Node 11 (58508, 0) edges:
+  -> 0 (65756, 0) cost: 7248
+  -> 1 (37521, 0) cost: 20987
+  -> 2 (28952, 0) cost: 29556
+  -> 3 (6351, 0) cost: 52157
+  -> 4 (48533, 0) cost: 9975
+  -> 5 (28528, 0) cost: 29980
+  -> 6 (22552, 0) cost: 35956
+  -> 7 (24537, 0) cost: 33971
+  -> 8 (14490, 0) cost: 44018
+  -> 9 (31511, 0) cost: 26997
+  -> 10 (66389, 0) cost: 7881
+  -> 12 (27089, 0) cost: 31419
+  -> 13 (15111, 0) cost: 43397
+Node 12 (27089, 0) edges:
+  -> 0 (65756, 0) cost: 38667
+  -> 1 (37521, 0) cost: 10432
+  -> 2 (28952, 0) cost: 1863
+  -> 3 (6351, 0) cost: 20738
+  -> 4 (48533, 0) cost: 21444
+  -> 5 (28528, 0) cost: 1439
+  -> 6 (22552, 0) cost: 4537
+  -> 7 (24537, 0) cost: 2552
+  -> 8 (14490, 0) cost: 12599
+  -> 9 (31511, 0) cost: 4422
+  -> 10 (66389, 0) cost: 39300
+  -> 11 (58508, 0) cost: 31419
+  -> 13 (15111, 0) cost: 11978
+  -> 13 (15111, 0) cost: 1
+Node 13 (15111, 0) edges:
+  -> 0 (65756, 0) cost: 50645
+  -> 1 (37521, 0) cost: 22410
+  -> 2 (28952, 0) cost: 13841
+  -> 3 (6351, 0) cost: 8760
+  -> 4 (48533, 0) cost: 33422
+  -> 5 (28528, 0) cost: 13417
+  -> 6 (22552, 0) cost: 7441
+  -> 7 (24537, 0) cost: 9426
+  -> 8 (14490, 0) cost: 621
+  -> 9 (31511, 0) cost: 16400
+  -> 10 (66389, 0) cost: 51278
+  -> 11 (58508, 0) cost: 43397
+  -> 12 (27089, 0) cost: 11978
+
+Running Dijkstra:
+Processing node 0 (65756, 0) with cost 0
+  Updated node 1 (37521, 0) to cost 28235
+  Updated node 2 (28952, 0) to cost 36804
+  Updated node 3 (6351, 0) to cost 59405
+  Updated node 4 (48533, 0) to cost 17223
+  Updated node 5 (28528, 0) to cost 37228
+  Updated node 6 (22552, 0) to cost 43204
+  Updated node 7 (24537, 0) to cost 41219
+  Updated node 8 (14490, 0) to cost 51266
+  Updated node 9 (31511, 0) to cost 34245
+  Updated node 10 (66389, 0) to cost 633
+  Updated node 11 (58508, 0) to cost 7248
+  Updated node 12 (27089, 0) to cost 38667
+  Updated node 13 (15111, 0) to cost 50645
+Processing node 10 (66389, 0) with cost 633
+  Updated node 11 (58508, 0) to cost 634
+Processing node 11 (58508, 0) with cost 634
+  Updated node 1 (37521, 0) to cost 21621
+  Updated node 2 (28952, 0) to cost 30190
+  Updated node 3 (6351, 0) to cost 52791
+  Updated node 4 (48533, 0) to cost 10609
+  Updated node 5 (28528, 0) to cost 30614
+  Updated node 6 (22552, 0) to cost 36590
+  Updated node 7 (24537, 0) to cost 34605
+  Updated node 8 (14490, 0) to cost 44652
+  Updated node 9 (31511, 0) to cost 27631
+  Updated node 12 (27089, 0) to cost 32053
+  Updated node 13 (15111, 0) to cost 44031
+Processing node 11 (58508, 0) with cost 634
+Processing node 4 (48533, 0) with cost 10609
+  Updated node 5 (28528, 0) to cost 10610
+Processing node 5 (28528, 0) with cost 10610
+  Updated node 1 (37521, 0) to cost 19603
+  Updated node 2 (28952, 0) to cost 11034
+  Updated node 3 (6351, 0) to cost 32787
+  Updated node 6 (22552, 0) to cost 16586
+  Updated node 7 (24537, 0) to cost 14601
+  Updated node 8 (14490, 0) to cost 24648
+  Updated node 9 (31511, 0) to cost 13593
+  Updated node 12 (27089, 0) to cost 12049
+  Updated node 13 (15111, 0) to cost 24027
+Processing node 2 (28952, 0) with cost 11034
+  Updated node 3 (6351, 0) to cost 11035
+Processing node 3 (6351, 0) with cost 11035
+  Updated node 8 (14490, 0) to cost 19174
+  Updated node 13 (15111, 0) to cost 19795
+Processing node 12 (27089, 0) with cost 12049
+  Updated node 13 (15111, 0) to cost 12050
+Processing node 13 (15111, 0) with cost 12050
+  Updated node 8 (14490, 0) to cost 12671
+Processing node 8 (14490, 0) with cost 12671
+  Updated node 9 (31511, 0) to cost 12672
+Processing node 9 (31511, 0) with cost 12672
+  Updated node 1 (37521, 0) to cost 18682
+Processing node 9 (31511, 0) with cost 12672
+Processing node 7 (24537, 0) with cost 14601
+Processing node 6 (22552, 0) with cost 16586
+Processing node 4 (48533, 0) with cost 10609
+Processing node 1 (37521, 0) with cost 18682
+Reached destination!
+Final result: 18682
+
+=== Final result: 18682 ===
